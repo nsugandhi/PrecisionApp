@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:background="#007AFF"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".8"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_days"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".033"
+            android:background="@android:color/transparent"
+            android:text="Last 7 Days"
+            android:textColor="#a0a0a0" />
+
+        <Button
+            android:id="@+id/btn_months"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".033"
+            android:background="@android:color/transparent"
+            android:text="Last 30 Days"
+            android:textColor="#a0a0a0" />
+
+        <Button
+            android:id="@+id/btn_matter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".033"
+            android:background="@android:color/transparent"
+            android:text="By Matter"
+            android:textColor="#a0a0a0" />
+    </LinearLayout>
+
+</LinearLayout>
